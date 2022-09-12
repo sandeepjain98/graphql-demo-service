@@ -1,0 +1,10 @@
+
+type BookArtist {
+    id: ID!
+    bookId: ID!
+    artistsId: ID!
+}
+
+extend type Query {
+    findAuthorByBookId( bookId : Int): [Author]
+}
